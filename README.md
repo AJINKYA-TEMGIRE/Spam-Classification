@@ -1,6 +1,6 @@
 <h1>Spam Classification Project</h1>
 
-In this project, we have the data of some messages and their corresponding labels. The dataset (CSV) is been given in the data folder.
+<pre>In this project, we have the data of some messages and their corresponding labels. The dataset (CSV) is been given in the data folder.
 The primary goal is to build a UI where the user can put his message and then he will get if the message is spam or ham.
 As this is textual data we are going to use some NLP concepts.
 There are two ways to solve the problem: first to use a Machine learning-based approach and second of course to use a Deep learning-based approach.
@@ -22,7 +22,7 @@ Deep learning approach:
 
 For the UI purpose we have taken a Deep learning-based model but you can also take the Machine learning model like Random Forest which performed the best
 
-
+</pre>
 
 
 
