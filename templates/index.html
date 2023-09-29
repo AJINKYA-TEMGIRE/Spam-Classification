@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classification</title>
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnfMPJrZ_rzc2djzCf3vA7PgplxL6D8Mj0og&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .heading{
+            font-size: xx-large;
+            margin-left: 330px;
+        }
+        form textarea{
+            font-size: x-large;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+        .enter{
+            background-color: rgb(213, 239, 242);
+            border: 5px solid black;
+            border-radius: 10px  ;
+            width: fit-content;
+            margin-left: 385px;
+        }
+        .submit input{
+            margin-left: 200px;
+            width: 150px;
+            height: 30px;
+        }
+        .result{
+            width: fit-content;
+            height: fit-content;
+            margin-top: 30px;
+            margin-left: 600px;
+            font-size: x-large;
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Email Spam Classification</h1>
+    </div>
+    <div class="enter">
+        <form action="/predict" method="POST">
+            <div class="text"> <textarea name="email" cols="50" rows="10" placeholder="Enter the mail or message here."></textarea></div>
+            <div class="submit"><input type="submit" value="Submit"></div>
+        </form>
+    </div>
+    <div class="result">
+        {% if result %}
+            <h1 style="text-align: center;">{{result}}</h1>
+        {% endif %}
+    </div>
+
+</body>
+</html>
